@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+ 
+
+  <ion-card  >
+   
+    <ion-card-header>
+      <ion-card-title>Iniciar sesion</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      <form [formGroup]="formularioLogin">
+
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input formCotrolName="Usuario"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input class="password" formCotrolName="Password"></ion-input>
+        </ion-item>
+    
+        
+      </form>
+      <br>
+      <div >
+      <ion-button [routerLink]="['/lobby']" >
+        Ingresar
+      </ion-button>
+      <ion-button [routerLink]="['/registro']" >
+        Registrarse
+      </ion-button>
+
+    </div>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar></ion-toolbar>
+  
+</ion-footer>
